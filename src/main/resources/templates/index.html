@@ -37,7 +37,7 @@
     </div>
     <nav aria-label="Page navigation example">
         <ul class="pagination pagination-lg justify-content-center">
-            <li th:if="${totalPages > 0} and searchWord == null" class="page-item" th:each="pageNumber : ${pageNumbers}">
+            <li th:if="${totalPages > 0 and searchWord == null}" class="page-item" th:each="pageNumber : ${pageNumbers}">
                 <a class="page-link" th:href="@{/movies(page=${pageNumber})}" th:text="${pageNumber}">
                 </a>
             </li>
