@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>Form</h1>
+<form action="#" th:action="@{/admin/createmovie}" th:object="${movie}" method="post">
+    <p>Movie name: <input type="text" th:field="*{name}"/></p>
+    <p>Movie title: <input type="text" th:field="*{title}"/></p>
+    <p>Movie budget: <input type="text" th:field="*{budget}"/></p>
+    <p>Movie fees: <input type="text" th:field="*{fees}"/></p>
+    <p>Movie posterUrl: <input type="text" th:field="*{posterUrl}"/></p>
+    <p>Movie genre: <input type="text" th:field="*{genre}"/></p>
+    <p>Movie actors:</p>
+    <select th:field="*{actors}" multiple>
+        <option th:each="actor : ${actors}" th:value="${actor.id}" th:text="${actor.firstname + ' ' + actor.lastname}">
+        </option>
+    </select>
+</p>
+<p>Movie producer: </p>
+<select th:field="*{producer}">
+    <option th:each="producer : ${producers}" th:value="${producer.id}"
+            th:text="${producer.firstname + ' ' + producer.lastname}">
+    </option>
+</select>
+<p><input type="submit" value="Submit"/> <input type="reset" value="Reset"/></p>
+</form>
+<form method="GET" th:action="@{/admin/createactor}">
+    <button class="btn">
+        <i class="fas fa-plus fa-2x">Add actor</i>
+    </button>
+</form>
+<form method="GET" th:action="@{/admin/createproducer}">
+    <button class="btn">
+        <i class="fas fa-plus fa-2x">Add producer</i>
+    </button>
+</form>
+</body>
+</html>

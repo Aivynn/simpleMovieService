@@ -1,0 +1,63 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org" lang="en"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Thymeleaf demo</title>
+</head>
+
+<body>
+<div th:replace="fragments/header :: header"></div>
+<div class="container">
+    <div class="row" style="padding : 15px;">
+        <div class="col-sm-4 left">
+            <img class="img-fluid" alt="Responsive image" th:src="@{${movie.posterUrl}}"/>
+        </div>
+
+        <div class="col-sm-4 right">
+            <div class="card-body">
+                <h3 class="card-title" th:text="|Movie name: ${movie.name}|"></h3>
+                <p class="card-text" th:text="|Movie title: ${movie.title}|"></p>
+                <p class="card-text" th:text="|Movie genre:  ${movie.genre}|"></p>
+                <p class="card-text" th:text="|Movie budget:  ${movie.budget}$|"></p>
+                <p class="card-text" th:text="|Movie fees:  ${movie.fees}$|"></p>
+                <p class="card-text">Movie actors:</p>
+                <ul class="inline-block">
+                    <li th:each="actor : ${movie.actors}" th:text="${actor.lastname + ' ' + actor.firstname}">
+                    </li>
+                </ul>
+                <p class="card-text" th:text="|Movie producer:  ${movie.producer.lastname + ' ' + movie.producer.firstname}|"></p>
+            </div>
+        </div>
+</div>
+    <div class="row" style="padding: 15px">
+        <div class="card mb-4" th:each="commentary : ${movie.comments}">
+            <div class="card-body">
+                <p th:text="|${commentary.text}|"></p>
+
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-row align-items-center">
+                        <h3 class="small mb-0 ms-2" th:text="|${commentary.person}|"></h3>
+                    </div>
+                </div>
+                <div sec:authorize="hasAuthority('user:write')">
+                    <a th:href="@{/admin/delete/{id}(id=${commentary.id})}"
+                       class="btn btn-outline-danger">Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <form class="form-group" th:action="@{|/movies/${movie.id}/addComment|}" th:object="${comment}" method="post">
+            <p>Your commentary: <input class="form-control" type="text" th:field="*{text}" /></p>
+                <input class="form-control" type="submit" value="Submit" />
+                <input class="form-control" type="reset" value="Reset" /></p>
+        </form>
+    </div>
+</div>
+<div th:replace="fragments/footer :: footer"></div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+</head>
+
+<body>
+<div th:replace="fragments/header :: header"></div>
+<div class="container">
+    <div class="row row-cols-4" style="padding: 15px;">
+        <div class="col-sm-3" th:each="movie : ${movies}">
+            <div class="img-thumbnail">
+                <img alt="Card image cap" class="card-img-top embed-responsive-item" style="object-fit: cover"
+                     th:src="@{${movie.posterUrl}}"/>
+
+            </div>
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5 class="card-title" th:text="|${movie.name}|"></h5>
+                    <h6 class="card-text"
+                        th:text="|${movie.producer.firstname + ' ' + movie.producer.lastname }|"></h6>
+                    <p class="card-text" th:text="|${movie.genre}|"></p>
+                    <td><a th:href="@{/movies/{id}(id=${movie.id})}"
+                           class="btn btn-outline-dark">Show</a>
+                        <div sec:authorize="hasAuthority('user:write')">
+                            <a th:href="@{/admin/edit/{id}(id=${movie.id})}"
+                               class="btn btn-outline-success">Edit</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination pagination-lg justify-content-center">
+            <li th:if="${totalPages > 0} and searchWord == null" class="page-item" th:each="pageNumber : ${pageNumbers}">
+                <a class="page-link" th:href="@{/movies(page=${pageNumber})}" th:text="${pageNumber}">
+                </a>
+            </li>
+            <li th:if="${searchWord != null}" class="page-item" th:each="pageNumber : ${pageNumbers}">
+                <a class="page-link"  th:href="${pageForWhat}+${pageNumber}+'&searchWord='+${searchWord}"
+                   th:text="${pageNumber}">
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<form method="GET" th:action="@{admin/createmovie}">
+    <button class="btn btn-secondary btn-lg btn-block btn-outline-light" sec:authorize="hasAuthority('user:write')">
+        <i class="fas fa-plus fa-2x">Add movie</i>
+    </button>
+</form>
+</body>
+</html>
