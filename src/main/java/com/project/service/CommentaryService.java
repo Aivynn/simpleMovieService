@@ -24,7 +24,7 @@ public class CommentaryService {
     public Comments create(Comments comment) {
 
         Comments newComment = commentaryRepository.save(comment);
-        LOGGER.info("Comment {} {} {} successfully saved", comment.getPerson(), comment.getText(),
+        LOGGER.info("Comment {} {} {} successfully saved", comment.getUser().getUsername(), comment.getText(),
                 comment.getMovie().getName());
         return newComment;
     }
@@ -34,6 +34,4 @@ public class CommentaryService {
         commentaryRepository.deleteById(id);
         LOGGER.info("Commentary with id {}, has been deleted", id);
     }
-
-
 }

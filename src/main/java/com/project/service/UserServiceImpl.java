@@ -1,5 +1,6 @@
 package com.project.service;
 
+import com.project.dto.UserDto;
 import com.project.model.Role;
 import com.project.model.User;
 import com.project.repository.UserRepository;
@@ -31,15 +32,19 @@ public class UserServiceImpl implements UserService {
 
     @Override
     @Transactional
-    public boolean register(User visitor) {
+    public boolean register(UserDto visitor) {
+        User user = new User();
         if(userRepository.findByEmail(visitor.getEmail()).isPresent()){
             return false;
         }
-        visitor.setPassword(passwordEncoder.encode(visitor.getPassword()));
-        visitor.setRole(Role.USER);
-        userRepository.save(visitor);
-        LOGGER.info("User {} {} {} successfully saved", visitor.getUsername(), visitor.getEmail(),
-                visitor.getRole());
+        user.setUsername(visitor.getUsername());
+        user.setEmail(visitor.getEmail());
+        user.setPassword(passwordEncoder.encode(visitor.getPassword()));
+        user.setRole(Role.USER);
+        user.setStatus(true);
+        userRepository.save(user);
+        LOGGER.info("User {} {} {} successfully saved", user.getUsername(), user.getEmail(),
+                user.getRole());
         return true;
     }
 
@@ -64,13 +69,18 @@ public class UserServiceImpl implements UserService {
         LOGGER.info("User with id {} has been deleted", id);
     }
 
+    @Override
+    public void ban(User user) {
+        user.setStatus(false);
+        userRepository.save(user);
+    }
 
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         User user = userRepository.findByUsername(username);
 
-        if (user == null) {
+        if (user == null || !user.getStatus()) {
             throw new UsernameNotFoundException("User not found");
         }
         return new org.springframework.security.core.userdetails.User(
@@ -78,4 +88,6 @@ public class UserServiceImpl implements UserService {
                 user.getPassword(),
                 user.getRole().getAuthorities());
     }
+
+
 }

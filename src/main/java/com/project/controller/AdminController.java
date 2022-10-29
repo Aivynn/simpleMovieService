@@ -3,29 +3,18 @@ package com.project.controller;
 import com.project.model.Actor;
 import com.project.model.Movie;
 import com.project.model.Producer;
-import com.project.service.ActorService;
-import com.project.service.CommentaryService;
-import com.project.service.MovieService;
-import com.project.service.ProducerService;
+import com.project.model.User;
+import com.project.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/admin")
 public class AdminController {
-
-    @GetMapping
-    public String main() {
-        return """
-                DemoApplication<br>
-                <a href="http://localhost:8080/admin/createmovie">add Movie</a><br>
-                <a href="http://localhost:8080/admin/createactor">add actor</a><br>
-                <a href="http://localhost:8080/admin/createproducer">add producer</a><br>
-                """;
-    }
 
     @Autowired
     private final MovieService movieService;
@@ -39,11 +28,15 @@ public class AdminController {
     @Autowired
     private final ProducerService producerService;
 
-    public AdminController(MovieService movieService, CommentaryService commentaryService, ActorService actorService, ProducerService producerService) {
+    @Autowired
+    private final UserServiceImpl userService;
+
+    public AdminController(MovieService movieService, CommentaryService commentaryService, ActorService actorService, ProducerService producerService, UserServiceImpl userService) {
         this.movieService = movieService;
         this.commentaryService = commentaryService;
         this.actorService = actorService;
         this.producerService = producerService;
+        this.userService = userService;
     }
 
     @RequestMapping(value = "/createactor", method = RequestMethod.GET)
@@ -108,6 +101,13 @@ public class AdminController {
     @GetMapping("/delete/{id}")
     public ModelAndView deleteComment(@PathVariable("id") String id) {
         commentaryService.delete(id);
-        return new ModelAndView("redirect:/movies");
+        return new ModelAndView("redirect:/movies?page=1");
+    }
+
+    @GetMapping("/ban/{id}")
+    public ModelAndView banUser(@PathVariable("id") String id) {
+         Optional<User> user = userService.findById(id);
+        user.ifPresent(userService::ban);
+        return new ModelAndView("redirect:/movies?page=1");
     }
 }

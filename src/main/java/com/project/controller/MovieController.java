@@ -2,8 +2,10 @@ package com.project.controller;
 
 import com.project.model.Comments;
 import com.project.model.Movie;
+import com.project.model.User;
 import com.project.service.CommentaryService;
 import com.project.service.MovieService;
+import com.project.service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.bind.DefaultValue;
 import org.springframework.data.domain.Page;
@@ -28,9 +30,13 @@ public class MovieController {
     @Autowired
     private final CommentaryService commentaryService;
 
-    public MovieController(MovieService movieService, CommentaryService commentaryService) {
+    @Autowired
+    private final UserServiceImpl userService;
+
+    public MovieController(MovieService movieService, CommentaryService commentaryService, UserServiceImpl userService) {
         this.movieService = movieService;
         this.commentaryService = commentaryService;
+        this.userService = userService;
     }
 
     @GetMapping("/test")
@@ -85,10 +91,10 @@ public class MovieController {
         } else {
             username = principal.toString();
         }
+        User user = userService.findByUserName(username);
         ModelAndView modelAndView = new ModelAndView("redirect:/movies/{id}");
         comment.setMovie(movieService.findById(id).get());
-        ;
-        comment.setPerson(username);
+        comment.setUser(user);
         commentaryService.create(comment);
         return modelAndView;
     }

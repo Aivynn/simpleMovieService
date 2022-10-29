@@ -12,24 +12,34 @@
 
 <div class="container">
     <div class="row" style="margin-top:20px">
-        <div style="width: 300px; height: 300px; margin: auto;">
+        <div style="width: 300px; height: 300px; margin: auto;"
+             th:if="${param.failed}" class="alert alert-danger">
+        </div>
             <h4 class="mb-3" align="center">Registration</h4>
             <form autocomplete="off" th:action="@{/register}" th:object="${visitor}" method="post">
                 <fieldset>
                     <div class="row g-3">
                         <div>
                             <label for="username" class="form-label">Login</label>
-                            <input type="text" class="form-control" id="username" required="true" autofocus="true"
+                            <input th:value="${username}" type="text" class="form-control" id="username" required="true" autofocus="true"
                                    th:field="*{username}">
+                            <div class="alert alert-danger" th:if="${#fields.hasErrors('username')}"
+                                 th:errors="*{username}">
+                            </div>
                         </div>
                         <div>
                             <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="password" required="true"
+                            <input th:value="${password}" type="password" class="form-control" id="password" required="true"
                                    th:field="*{password}">
                         </div>
                         <div>
+                            <label for="matchingPassword" class="form-label">Password</label>
+                            <input type="password" th:value="${matchingPassword}" class="form-control" id="matchingPassword" required="true"
+                                   th:field="*{matchingPassword}">
+                        </div>
+                        <div>
                             <label for="email" class="form-label">Email</label>
-                            <input type="text" class="form-control" id="email" required="true"
+                            <input th:value="${email}" type="text" class="form-control" id="email" required="true"
                                    th:field="*{email}">
                         </div>
                     <br>
