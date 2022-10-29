@@ -105,7 +105,7 @@ public class AdminController {
 
     @GetMapping("/ban/{id}")
     public ModelAndView banUser(@PathVariable("id") String id) {
-         Optional<User> user = userService.findById(id);
+        Optional<User> user = userService.findById(id);
         user.ifPresent(userService::ban);
         return new ModelAndView("redirect:/movies?page=1");
     }
@@ -113,31 +113,17 @@ public class AdminController {
 
     @GetMapping("/manager")
     public ModelAndView adminPanel(ModelAndView model) {
-        Iterable<User> users = userService.getAll();;
-        model.addObject("users",users);
+        Iterable<User> users = userService.getAll();
+        ;
+        model.addObject("users", users);
         model.addObject("visitor", new UserDto());
         model.setViewName("panel");
         return model;
     }
 
-    @GetMapping("/user/status")
-    public ModelAndView status(ModelAndView model) {
-        Iterable<User> users = userService.getAll();
-        model.addObject("users",users);
-        model.addObject("visitor", new UserDto());
-        model.setViewName("status");
-        return model;
-    }
-
     @PostMapping("/manager/{id}")
     public ModelAndView preveligious(@PathVariable(value = "id") String id, @ModelAttribute("visitor") UserDto user, ModelAndView model) {
-        userService.update(user,id);
+        userService.update(user, id);
         return new ModelAndView("redirect:/admin/panel");
-    }
-
-    @PostMapping("/user/status/{id}")
-    public ModelAndView unban(@PathVariable(value = "id") String id, @ModelAttribute("visitor") UserDto user, ModelAndView model) {
-        userService.update(user,id);
-        return new ModelAndView("redirect:/admin/user/status");
     }
 }
