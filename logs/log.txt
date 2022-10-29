@@ -5611,3 +5611,1028 @@ org.postgresql.util.PSQLException: FATAL: too many connections for role "mykuthn
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-29 16:37:14,996 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Cannot acquire connection from data source
+org.postgresql.util.PSQLException: FATAL: too many connections for role "mykuthnimybzkw"
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2787)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:173)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:290)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-29 16:37:26,635 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Cannot acquire connection from data source
+org.postgresql.util.PSQLException: FATAL: too many connections for role "mykuthnimybzkw"
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2787)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:173)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:290)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-29 16:37:32,372 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=8, active=0, idle=8, waiting=0)
+2022-10-29 16:37:32,374 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:37:38,570 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Cannot acquire connection from data source
+org.postgresql.util.PSQLException: FATAL: too many connections for role "mykuthnimybzkw"
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2787)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:173)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:290)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-29 16:37:49,432 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Cannot acquire connection from data source
+org.postgresql.util.PSQLException: FATAL: too many connections for role "mykuthnimybzkw"
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2787)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:173)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:290)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-29 16:38:00,412 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Cannot acquire connection from data source
+org.postgresql.util.PSQLException: FATAL: too many connections for role "mykuthnimybzkw"
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2787)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:173)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:290)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-29 16:38:02,388 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=8, active=0, idle=8, waiting=0)
+2022-10-29 16:38:02,389 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:38:12,974 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Cannot acquire connection from data source
+org.postgresql.util.PSQLException: FATAL: too many connections for role "mykuthnimybzkw"
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2787)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:173)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:290)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-29 16:38:24,945 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Cannot acquire connection from data source
+org.postgresql.util.PSQLException: FATAL: too many connections for role "mykuthnimybzkw"
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2787)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:173)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:290)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-29 16:38:32,575 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=8, active=0, idle=8, waiting=0)
+2022-10-29 16:38:32,622 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:38:37,343 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Cannot acquire connection from data source
+org.postgresql.util.PSQLException: FATAL: too many connections for role "mykuthnimybzkw"
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2787)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:173)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:290)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-29 16:38:49,324 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Cannot acquire connection from data source
+org.postgresql.util.PSQLException: FATAL: too many connections for role "mykuthnimybzkw"
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2787)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:173)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:290)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-29 16:39:01,020 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Cannot acquire connection from data source
+org.postgresql.util.PSQLException: FATAL: too many connections for role "mykuthnimybzkw"
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2787)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:173)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:290)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-29 16:39:02,819 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=8, active=0, idle=8, waiting=0)
+2022-10-29 16:39:02,820 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:39:13,113 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Cannot acquire connection from data source
+org.postgresql.util.PSQLException: FATAL: too many connections for role "mykuthnimybzkw"
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2787)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:173)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:290)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-29 16:39:25,359 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Cannot acquire connection from data source
+org.postgresql.util.PSQLException: FATAL: too many connections for role "mykuthnimybzkw"
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2787)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:173)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:290)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-29 16:39:32,823 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=8, active=0, idle=8, waiting=0)
+2022-10-29 16:39:32,824 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:39:37,495 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Cannot acquire connection from data source
+org.postgresql.util.PSQLException: FATAL: too many connections for role "mykuthnimybzkw"
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2787)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:173)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:290)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-29 16:39:49,589 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Cannot acquire connection from data source
+org.postgresql.util.PSQLException: FATAL: too many connections for role "mykuthnimybzkw"
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2787)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:173)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:290)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-29 16:40:01,029 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Cannot acquire connection from data source
+org.postgresql.util.PSQLException: FATAL: too many connections for role "mykuthnimybzkw"
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2787)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:173)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:290)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-29 16:40:02,834 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=8, active=0, idle=8, waiting=0)
+2022-10-29 16:40:02,834 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:40:12,904 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Cannot acquire connection from data source
+org.postgresql.util.PSQLException: FATAL: too many connections for role "mykuthnimybzkw"
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2787)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:173)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:290)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-29 16:40:24,971 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Cannot acquire connection from data source
+org.postgresql.util.PSQLException: FATAL: too many connections for role "mykuthnimybzkw"
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2787)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:173)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:290)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-29 16:40:32,838 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=8, active=0, idle=8, waiting=0)
+2022-10-29 16:40:32,839 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:40:37,168 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Cannot acquire connection from data source
+org.postgresql.util.PSQLException: FATAL: too many connections for role "mykuthnimybzkw"
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2787)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:173)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:290)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-29 16:40:48,385 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Cannot acquire connection from data source
+org.postgresql.util.PSQLException: FATAL: too many connections for role "mykuthnimybzkw"
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2787)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:173)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:290)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-29 16:41:00,158 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Cannot acquire connection from data source
+org.postgresql.util.PSQLException: FATAL: too many connections for role "mykuthnimybzkw"
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2787)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:173)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:290)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-29 16:41:02,855 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=8, active=0, idle=8, waiting=0)
+2022-10-29 16:41:02,871 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:41:11,859 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Cannot acquire connection from data source
+org.postgresql.util.PSQLException: FATAL: too many connections for role "mykuthnimybzkw"
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2787)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:173)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:290)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-29 16:41:23,785 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Cannot acquire connection from data source
+org.postgresql.util.PSQLException: FATAL: too many connections for role "mykuthnimybzkw"
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2787)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:173)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:290)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-29 16:41:32,884 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=8, active=0, idle=8, waiting=0)
+2022-10-29 16:41:32,884 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:41:35,642 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Cannot acquire connection from data source
+org.postgresql.util.PSQLException: FATAL: too many connections for role "mykuthnimybzkw"
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2787)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:173)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:290)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-29 16:41:47,583 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Cannot acquire connection from data source
+org.postgresql.util.PSQLException: FATAL: too many connections for role "mykuthnimybzkw"
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2787)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:173)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:290)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-29 16:41:59,692 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Cannot acquire connection from data source
+org.postgresql.util.PSQLException: FATAL: too many connections for role "mykuthnimybzkw"
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2787)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:173)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:290)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-29 16:42:02,895 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=8, active=0, idle=8, waiting=0)
+2022-10-29 16:42:02,895 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:42:11,760 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Cannot acquire connection from data source
+org.postgresql.util.PSQLException: FATAL: too many connections for role "mykuthnimybzkw"
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2787)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:173)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:290)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-29 16:42:25,668 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5c745129
+2022-10-29 16:42:29,124 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6c81bde8
+2022-10-29 16:42:29,124 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 connection adder] HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:42:32,910 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:42:32,910 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:43:02,920 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:43:02,921 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:43:32,925 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:43:32,926 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:44:02,928 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:44:02,929 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:44:32,939 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:44:32,940 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:45:02,949 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:45:02,950 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:45:32,960 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:45:32,960 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:46:02,968 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:46:02,969 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:46:32,969 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:46:32,969 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:47:02,972 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:47:02,974 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:47:32,983 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:47:32,983 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:48:02,988 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:48:02,988 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:48:32,993 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:48:32,993 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:49:03,006 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:49:03,007 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:49:33,015 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:49:33,016 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:50:03,025 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:50:03,026 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:50:33,032 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:50:33,034 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:51:03,034 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:51:03,036 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:51:33,046 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:51:33,047 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:52:03,051 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:52:03,051 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:52:33,079 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:52:33,080 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:52:38,583 DEBUG org.springframework.security.web.FilterChainProxy [http-nio-8080-exec-3] Securing GET /
+2022-10-29 16:52:38,584 DEBUG org.springframework.security.web.context.SecurityContextPersistenceFilter [http-nio-8080-exec-3] Set SecurityContextHolder to empty SecurityContext
+2022-10-29 16:52:38,584 DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter [http-nio-8080-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2022-10-29 16:52:38,585 DEBUG org.springframework.security.web.session.SessionManagementFilter [http-nio-8080-exec-3] Request requested invalid session id 6B1A302B0447494E9099849583107F17
+2022-10-29 16:52:38,585 DEBUG org.springframework.security.web.access.intercept.FilterSecurityInterceptor [http-nio-8080-exec-3] Authorized filter invocation [GET /] with attributes [permitAll]
+2022-10-29 16:52:38,586 DEBUG org.springframework.security.web.FilterChainProxy [http-nio-8080-exec-3] Secured GET /
+2022-10-29 16:52:38,586 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-3] GET "/", parameters={}
+2022-10-29 16:52:38,587 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8080-exec-3] Mapped to com.project.controller.MainController#welcomePage()
+2022-10-29 16:52:38,587 DEBUG org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor [http-nio-8080-exec-3] Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-10-29 16:52:38,589 DEBUG org.springframework.web.servlet.view.RedirectView [http-nio-8080-exec-3] View name 'redirect:', model {}
+2022-10-29 16:52:38,589 DEBUG org.springframework.security.web.context.HttpSessionSecurityContextRepository [http-nio-8080-exec-3] Did not store anonymous SecurityContext
+2022-10-29 16:52:38,594 DEBUG org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor [http-nio-8080-exec-3] Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-10-29 16:52:38,595 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-3] Completed 302 FOUND
+2022-10-29 16:52:38,595 DEBUG org.springframework.security.web.context.HttpSessionSecurityContextRepository [http-nio-8080-exec-3] Did not store anonymous SecurityContext
+2022-10-29 16:52:38,595 DEBUG org.springframework.security.web.context.SecurityContextPersistenceFilter [http-nio-8080-exec-3] Cleared SecurityContextHolder to complete request
+2022-10-29 16:52:38,617 DEBUG org.springframework.security.web.FilterChainProxy [http-nio-8080-exec-4] Securing GET /movies?page=1
+2022-10-29 16:52:38,617 DEBUG org.springframework.security.web.context.SecurityContextPersistenceFilter [http-nio-8080-exec-4] Set SecurityContextHolder to empty SecurityContext
+2022-10-29 16:52:38,617 DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter [http-nio-8080-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2022-10-29 16:52:38,617 DEBUG org.springframework.security.web.session.SessionManagementFilter [http-nio-8080-exec-4] Request requested invalid session id 6B1A302B0447494E9099849583107F17
+2022-10-29 16:52:38,618 DEBUG org.springframework.security.web.access.intercept.FilterSecurityInterceptor [http-nio-8080-exec-4] Authorized filter invocation [GET /movies?page=1] with attributes [permitAll]
+2022-10-29 16:52:38,618 DEBUG org.springframework.security.web.FilterChainProxy [http-nio-8080-exec-4] Secured GET /movies?page=1
+2022-10-29 16:52:38,618 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-4] GET "/movies?page=1", parameters={masked}
+2022-10-29 16:52:38,618 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8080-exec-4] Mapped to com.project.controller.MovieController#getOnePage(ModelAndView, int)
+2022-10-29 16:52:38,618 DEBUG org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor [http-nio-8080-exec-4] Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-10-29 16:52:38,622 DEBUG org.springframework.orm.jpa.JpaTransactionManager [http-nio-8080-exec-4] Found thread-bound EntityManager [SessionImpl(826208364<open>)] for JPA transaction
+2022-10-29 16:52:38,634 DEBUG org.springframework.orm.jpa.JpaTransactionManager [http-nio-8080-exec-4] Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-10-29 16:52:38,867 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [http-nio-8080-exec-4] Setting JDBC Connection [HikariProxyConnection@555114661 wrapping org.postgresql.jdbc.PgConnection@6f725dff] read-only
+2022-10-29 16:52:38,867 DEBUG org.hibernate.engine.transaction.internal.TransactionImpl [http-nio-8080-exec-4] On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2022-10-29 16:52:38,867 DEBUG org.hibernate.engine.transaction.internal.TransactionImpl [http-nio-8080-exec-4] begin
+2022-10-29 16:52:38,867 DEBUG org.springframework.orm.jpa.JpaTransactionManager [http-nio-8080-exec-4] Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@5d33d03e]
+2022-10-29 16:52:38,867 DEBUG org.hibernate.query.criteria.internal.CriteriaQueryImpl [http-nio-8080-exec-4] Rendered criteria query -> select generatedAlias0 from Movie as generatedAlias0
+2022-10-29 16:52:38,867 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] select movie0_.id as id1_3_, movie0_.budget as budget2_3_, movie0_.fees as fees3_3_, movie0_.genre as genre4_3_, movie0_.name as name5_3_, movie0_.poster_url as poster_u6_3_, movie0_.producer_id as producer9_3_, movie0_.status as status7_3_, movie0_.title as title8_3_ from movie movie0_ limit ?
+2022-10-29 16:52:39,062 DEBUG org.hibernate.loader.Loader [http-nio-8080-exec-4] Result set row: 0
+2022-10-29 16:52:39,062 DEBUG org.hibernate.loader.Loader [http-nio-8080-exec-4] Result row: EntityKey[com.project.model.Movie#1cfefa03-8e85-4bd5-986d-28cdb794d1ca]
+2022-10-29 16:52:39,063 DEBUG org.hibernate.loader.Loader [http-nio-8080-exec-4] Result set row: 1
+2022-10-29 16:52:39,063 DEBUG org.hibernate.loader.Loader [http-nio-8080-exec-4] Result row: EntityKey[com.project.model.Movie#c662e2f4-4f2e-4d95-a4c4-97b0438d5e1d]
+2022-10-29 16:52:39,063 DEBUG org.hibernate.loader.Loader [http-nio-8080-exec-4] Result set row: 2
+2022-10-29 16:52:39,063 DEBUG org.hibernate.loader.Loader [http-nio-8080-exec-4] Result row: EntityKey[com.project.model.Movie#782ef39e-36a5-4c75-8849-846cad13e0a0]
+2022-10-29 16:52:39,063 DEBUG org.hibernate.loader.Loader [http-nio-8080-exec-4] Result set row: 3
+2022-10-29 16:52:39,063 DEBUG org.hibernate.loader.Loader [http-nio-8080-exec-4] Result row: EntityKey[com.project.model.Movie#e33b0688-b27b-44cd-bba5-9b69278443e8]
+2022-10-29 16:52:39,063 DEBUG org.hibernate.loader.Loader [http-nio-8080-exec-4] Result set row: 4
+2022-10-29 16:52:39,064 DEBUG org.hibernate.loader.Loader [http-nio-8080-exec-4] Result row: EntityKey[com.project.model.Movie#5870452f-b80a-4602-a6b5-3e020a4a041e]
+2022-10-29 16:52:39,064 DEBUG org.hibernate.loader.Loader [http-nio-8080-exec-4] Result set row: 5
+2022-10-29 16:52:39,064 DEBUG org.hibernate.loader.Loader [http-nio-8080-exec-4] Result row: EntityKey[com.project.model.Movie#136bc72d-09ef-4fd1-82c6-8512d422fc50]
+2022-10-29 16:52:39,064 DEBUG org.hibernate.loader.Loader [http-nio-8080-exec-4] Result set row: 6
+2022-10-29 16:52:39,064 DEBUG org.hibernate.loader.Loader [http-nio-8080-exec-4] Result row: EntityKey[com.project.model.Movie#edc3f435-ee90-46d6-a0ee-7d16d14137e7]
+2022-10-29 16:52:39,064 DEBUG org.hibernate.loader.Loader [http-nio-8080-exec-4] Result set row: 7
+2022-10-29 16:52:39,064 DEBUG org.hibernate.loader.Loader [http-nio-8080-exec-4] Result row: EntityKey[com.project.model.Movie#74f67b13-9792-497b-be14-c16da3dbeedf]
+2022-10-29 16:52:39,064 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Resolving attributes for [com.project.model.Movie#1cfefa03-8e85-4bd5-986d-28cdb794d1ca]
+2022-10-29 16:52:39,064 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `actors` : value = NOT NULL COLLECTION
+2022-10-29 16:52:39,064 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`actors`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,064 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `budget` : value = 19000000
+2022-10-29 16:52:39,064 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`budget`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,064 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `comments` : value = NOT NULL COLLECTION
+2022-10-29 16:52:39,064 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`comments`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,064 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `fees` : value = 388800000
+2022-10-29 16:52:39,064 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`fees`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,064 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `genre` : value = Science
+2022-10-29 16:52:39,064 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`genre`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,065 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `name` : value = Back_to_the_Future
+2022-10-29 16:52:39,065 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`name`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,065 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `posterUrl` : value = https://cdn.shopify.com/s/files/1/0057/3728/3618/products/0b2b67a1de6a06d1ce65e4ccc64047e3_a9f7318e-c5c4-4d2a-aed2-890bbfad883c_480x.progressive.jpg?v=1573590273
+2022-10-29 16:52:39,065 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`posterUrl`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,065 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `producer` : value = b051db34-4956-45c5-b319-224e9ee42a94
+2022-10-29 16:52:39,065 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`producer`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,065 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] select producer0_.id as id1_5_0_, producer0_.achievements as achievem2_5_0_, producer0_.age as age3_5_0_, producer0_.firstname as firstnam4_5_0_, producer0_.lastname as lastname5_5_0_ from producer producer0_ where producer0_.id=?
+2022-10-29 16:52:39,226 DEBUG org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl [http-nio-8080-exec-4] On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2022-10-29 16:52:39,226 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Resolving attributes for [com.project.model.Producer#b051db34-4956-45c5-b319-224e9ee42a94]
+2022-10-29 16:52:39,226 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `achievements` : value = Chicago Film Critics Association, Academy Award for Best Director
+Golden Globe Award for Best Director
+2022-10-29 16:52:39,226 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`achievements`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,226 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `age` : value = 70
+2022-10-29 16:52:39,226 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`age`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,226 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `firstname` : value = Robert
+2022-10-29 16:52:39,227 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`firstname`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,227 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `lastname` : value = Zemeckis
+2022-10-29 16:52:39,227 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`lastname`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,227 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `movies` : value = NOT NULL COLLECTION
+2022-10-29 16:52:39,227 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`movies`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,227 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Done materializing entity [com.project.model.Producer#b051db34-4956-45c5-b319-224e9ee42a94]
+2022-10-29 16:52:39,227 DEBUG org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader [http-nio-8080-exec-4] Done entity load : com.project.model.Producer#b051db34-4956-45c5-b319-224e9ee42a94
+2022-10-29 16:52:39,227 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `status` : value = true
+2022-10-29 16:52:39,227 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`status`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,227 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `title` : value = For other uses, see Back to the Future
+2022-10-29 16:52:39,227 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`title`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,227 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Done materializing entity [com.project.model.Movie#1cfefa03-8e85-4bd5-986d-28cdb794d1ca]
+2022-10-29 16:52:39,227 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Resolving attributes for [com.project.model.Movie#c662e2f4-4f2e-4d95-a4c4-97b0438d5e1d]
+2022-10-29 16:52:39,227 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `actors` : value = NOT NULL COLLECTION
+2022-10-29 16:52:39,227 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`actors`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,227 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `budget` : value = 63000000
+2022-10-29 16:52:39,227 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`budget`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,227 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `comments` : value = NOT NULL COLLECTION
+2022-10-29 16:52:39,227 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`comments`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,228 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `fees` : value = 1000000000
+2022-10-29 16:52:39,228 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`fees`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,228 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `genre` : value = Science
+2022-10-29 16:52:39,228 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`genre`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,228 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `name` : value = Jurassic Park
+2022-10-29 16:52:39,228 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`name`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,228 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `posterUrl` : value = https://cdn.shopify.com/s/files/1/0057/3728/3618/products/e50345d7cfee907ad63bb835109b37b9_263eaa00-ac40-4a0e-b2d7-86bb4ac69c90_480x.progressive.jpg?v=1573584652
+2022-10-29 16:52:39,228 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`posterUrl`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,228 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `producer` : value = cec0eef0-9623-4dd2-a807-6abe9f409334
+2022-10-29 16:52:39,228 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`producer`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,228 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] select producer0_.id as id1_5_0_, producer0_.achievements as achievem2_5_0_, producer0_.age as age3_5_0_, producer0_.firstname as firstnam4_5_0_, producer0_.lastname as lastname5_5_0_ from producer producer0_ where producer0_.id=?
+2022-10-29 16:52:39,410 DEBUG org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl [http-nio-8080-exec-4] On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2022-10-29 16:52:39,410 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Resolving attributes for [com.project.model.Producer#cec0eef0-9623-4dd2-a807-6abe9f409334]
+2022-10-29 16:52:39,410 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `achievements` : value = Golden Globe,BAFTA Awards
+2022-10-29 16:52:39,410 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`achievements`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,410 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `age` : value = 75
+2022-10-29 16:52:39,410 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`age`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,410 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `firstname` : value = Steven
+2022-10-29 16:52:39,410 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`firstname`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,410 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `lastname` : value = Spielberg
+2022-10-29 16:52:39,410 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`lastname`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,410 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `movies` : value = NOT NULL COLLECTION
+2022-10-29 16:52:39,410 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`movies`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,411 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Done materializing entity [com.project.model.Producer#cec0eef0-9623-4dd2-a807-6abe9f409334]
+2022-10-29 16:52:39,411 DEBUG org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader [http-nio-8080-exec-4] Done entity load : com.project.model.Producer#cec0eef0-9623-4dd2-a807-6abe9f409334
+2022-10-29 16:52:39,411 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `status` : value = true
+2022-10-29 16:52:39,411 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`status`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,411 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `title` : value = Dinosaurs in Jurassic Park
+2022-10-29 16:52:39,411 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`title`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,411 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Done materializing entity [com.project.model.Movie#c662e2f4-4f2e-4d95-a4c4-97b0438d5e1d]
+2022-10-29 16:52:39,411 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Resolving attributes for [com.project.model.Movie#782ef39e-36a5-4c75-8849-846cad13e0a0]
+2022-10-29 16:52:39,411 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `actors` : value = NOT NULL COLLECTION
+2022-10-29 16:52:39,411 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`actors`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,411 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `budget` : value = 150000000
+2022-10-29 16:52:39,411 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`budget`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,411 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `comments` : value = NOT NULL COLLECTION
+2022-10-29 16:52:39,411 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`comments`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,411 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `fees` : value = 353000000
+2022-10-29 16:52:39,411 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`fees`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,411 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `genre` : value = Action
+2022-10-29 16:52:39,411 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`genre`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,411 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `name` : value = Batman Begins
+2022-10-29 16:52:39,411 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`name`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,411 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `posterUrl` : value = https://cdn.shopify.com/s/files/1/0057/3728/3618/products/batmanbegins.24x36_480x.progressive.jpg?v=1591901466
+2022-10-29 16:52:39,411 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`posterUrl`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,412 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `producer` : value = e8cbdcbb-82b6-47a7-b00a-5781b57dc91c
+2022-10-29 16:52:39,412 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`producer`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,412 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] select producer0_.id as id1_5_0_, producer0_.achievements as achievem2_5_0_, producer0_.age as age3_5_0_, producer0_.firstname as firstnam4_5_0_, producer0_.lastname as lastname5_5_0_ from producer producer0_ where producer0_.id=?
+2022-10-29 16:52:39,588 DEBUG org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl [http-nio-8080-exec-4] On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2022-10-29 16:52:39,588 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Resolving attributes for [com.project.model.Producer#e8cbdcbb-82b6-47a7-b00a-5781b57dc91c]
+2022-10-29 16:52:39,588 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `achievements` : value = Golden Globe,BAFTA Awards
+2022-10-29 16:52:39,588 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`achievements`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,588 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `age` : value = 52
+2022-10-29 16:52:39,588 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`age`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,588 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `firstname` : value = Christopher
+2022-10-29 16:52:39,588 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`firstname`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,588 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `lastname` : value = Nolan
+2022-10-29 16:52:39,588 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`lastname`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,588 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `movies` : value = NOT NULL COLLECTION
+2022-10-29 16:52:39,588 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`movies`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,588 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Done materializing entity [com.project.model.Producer#e8cbdcbb-82b6-47a7-b00a-5781b57dc91c]
+2022-10-29 16:52:39,589 DEBUG org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader [http-nio-8080-exec-4] Done entity load : com.project.model.Producer#e8cbdcbb-82b6-47a7-b00a-5781b57dc91c
+2022-10-29 16:52:39,589 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `status` : value = true
+2022-10-29 16:52:39,589 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`status`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,589 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `title` : value = For the tie-in video game, see Batman Begins
+2022-10-29 16:52:39,589 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`title`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,589 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Done materializing entity [com.project.model.Movie#782ef39e-36a5-4c75-8849-846cad13e0a0]
+2022-10-29 16:52:39,589 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Resolving attributes for [com.project.model.Movie#e33b0688-b27b-44cd-bba5-9b69278443e8]
+2022-10-29 16:52:39,589 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `actors` : value = NOT NULL COLLECTION
+2022-10-29 16:52:39,589 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`actors`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,589 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `budget` : value = 63000000
+2022-10-29 16:52:39,589 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`budget`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,589 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `comments` : value = NOT NULL COLLECTION
+2022-10-29 16:52:39,589 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`comments`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,589 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `fees` : value = 101000000
+2022-10-29 16:52:39,589 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`fees`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,589 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `genre` : value = Action
+2022-10-29 16:52:39,589 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`genre`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,589 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `name` : value = Fight Club
+2022-10-29 16:52:39,589 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`name`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,589 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `posterUrl` : value = https://cdn.shopify.com/s/files/1/0057/3728/3618/products/acc27b50bd646b2a7be5b9e51cf3c4b6_480x.progressive.jpg?v=1573572658
+2022-10-29 16:52:39,589 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`posterUrl`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,589 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `producer` : value = 42ebab8a-bdd3-4f49-8019-6bad4f15ae89
+2022-10-29 16:52:39,589 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`producer`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,589 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] select producer0_.id as id1_5_0_, producer0_.achievements as achievem2_5_0_, producer0_.age as age3_5_0_, producer0_.firstname as firstnam4_5_0_, producer0_.lastname as lastname5_5_0_ from producer producer0_ where producer0_.id=?
+2022-10-29 16:52:39,769 DEBUG org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl [http-nio-8080-exec-4] On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2022-10-29 16:52:39,769 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Resolving attributes for [com.project.model.Producer#42ebab8a-bdd3-4f49-8019-6bad4f15ae89]
+2022-10-29 16:52:39,769 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `achievements` : value = Golden Globe,BAFTA Awards
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`achievements`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `age` : value = 60
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`age`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `firstname` : value = David
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`firstname`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `lastname` : value = Fincher
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`lastname`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `movies` : value = NOT NULL COLLECTION
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`movies`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Done materializing entity [com.project.model.Producer#42ebab8a-bdd3-4f49-8019-6bad4f15ae89]
+2022-10-29 16:52:39,770 DEBUG org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader [http-nio-8080-exec-4] Done entity load : com.project.model.Producer#42ebab8a-bdd3-4f49-8019-6bad4f15ae89
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `status` : value = true
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`status`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `title` : value = MISCHIEF.MAYHEAM.SOAP
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`title`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Done materializing entity [com.project.model.Movie#e33b0688-b27b-44cd-bba5-9b69278443e8]
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Resolving attributes for [com.project.model.Movie#5870452f-b80a-4602-a6b5-3e020a4a041e]
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `actors` : value = NOT NULL COLLECTION
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`actors`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `budget` : value = 163000000
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`budget`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `comments` : value = NOT NULL COLLECTION
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`comments`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `fees` : value = 439000000
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`fees`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `genre` : value = Fantasy
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`genre`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `name` : value = Warcraft
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`name`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `posterUrl` : value = https://cdn.shopify.com/s/files/1/0057/3728/3618/products/warcraft.usadv.den.ar_480x.progressive.jpg?v=1593469463
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`posterUrl`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `producer` : value = 470e5ca99-d7e9-43c7-beae-3fc7ee74f705
+2022-10-29 16:52:39,770 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`producer`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,770 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] select producer0_.id as id1_5_0_, producer0_.achievements as achievem2_5_0_, producer0_.age as age3_5_0_, producer0_.firstname as firstnam4_5_0_, producer0_.lastname as lastname5_5_0_ from producer producer0_ where producer0_.id=?
+2022-10-29 16:52:39,940 DEBUG org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl [http-nio-8080-exec-4] On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2022-10-29 16:52:39,940 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Resolving attributes for [com.project.model.Producer#470e5ca99-d7e9-43c7-beae-3fc7ee74f705]
+2022-10-29 16:52:39,940 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `achievements` : value = 
+2022-10-29 16:52:39,940 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`achievements`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,940 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `age` : value = 51
+2022-10-29 16:52:39,940 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`age`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,940 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `firstname` : value = Duncan
+2022-10-29 16:52:39,940 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`firstname`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,941 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `lastname` : value = Jones
+2022-10-29 16:52:39,941 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`lastname`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,941 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `movies` : value = NOT NULL COLLECTION
+2022-10-29 16:52:39,941 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`movies`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,941 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Done materializing entity [com.project.model.Producer#470e5ca99-d7e9-43c7-beae-3fc7ee74f705]
+2022-10-29 16:52:39,941 DEBUG org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader [http-nio-8080-exec-4] Done entity load : com.project.model.Producer#470e5ca99-d7e9-43c7-beae-3fc7ee74f705
+2022-10-29 16:52:39,941 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `status` : value = true
+2022-10-29 16:52:39,941 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`status`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,941 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `title` : value = Two worlds, one home
+2022-10-29 16:52:39,941 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`title`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,941 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Done materializing entity [com.project.model.Movie#5870452f-b80a-4602-a6b5-3e020a4a041e]
+2022-10-29 16:52:39,941 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Resolving attributes for [com.project.model.Movie#136bc72d-09ef-4fd1-82c6-8512d422fc50]
+2022-10-29 16:52:39,942 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `actors` : value = NOT NULL COLLECTION
+2022-10-29 16:52:39,942 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`actors`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,942 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `budget` : value = 150000000
+2022-10-29 16:52:39,942 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`budget`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,942 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `comments` : value = NOT NULL COLLECTION
+2022-10-29 16:52:39,942 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`comments`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,942 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `fees` : value = 259000000
+2022-10-29 16:52:39,942 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`fees`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,942 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `genre` : value = SCI-FI
+2022-10-29 16:52:39,942 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`genre`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,942 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `name` : value = Blade Runner 2049
+2022-10-29 16:52:39,942 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`name`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,942 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `posterUrl` : value = https://cdn.shopify.com/s/files/1/0057/3728/3618/products/07c231f2775f4ece93b1af53e5009298_5e9d1433-5ebd-4343-956c-5478acce8afa_480x.progressive.jpg?v=1573618953
+2022-10-29 16:52:39,942 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`posterUrl`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,942 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `producer` : value = 819edac3-95f9-4110-adfd-0a6c09533bc8
+2022-10-29 16:52:39,942 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`producer`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:39,943 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] select producer0_.id as id1_5_0_, producer0_.achievements as achievem2_5_0_, producer0_.age as age3_5_0_, producer0_.firstname as firstnam4_5_0_, producer0_.lastname as lastname5_5_0_ from producer producer0_ where producer0_.id=?
+2022-10-29 16:52:40,130 DEBUG org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl [http-nio-8080-exec-4] On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2022-10-29 16:52:40,130 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Resolving attributes for [com.project.model.Producer#819edac3-95f9-4110-adfd-0a6c09533bc8]
+2022-10-29 16:52:40,130 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `achievements` : value = 
+2022-10-29 16:52:40,130 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`achievements`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,130 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `age` : value = 55
+2022-10-29 16:52:40,130 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`age`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,130 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `firstname` : value = Denis
+2022-10-29 16:52:40,130 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`firstname`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,131 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `lastname` : value = Villeneuve
+2022-10-29 16:52:40,131 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`lastname`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,131 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `movies` : value = NOT NULL COLLECTION
+2022-10-29 16:52:40,131 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`movies`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,132 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Done materializing entity [com.project.model.Producer#819edac3-95f9-4110-adfd-0a6c09533bc8]
+2022-10-29 16:52:40,132 DEBUG org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader [http-nio-8080-exec-4] Done entity load : com.project.model.Producer#819edac3-95f9-4110-adfd-0a6c09533bc8
+2022-10-29 16:52:40,132 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `status` : value = true
+2022-10-29 16:52:40,132 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`status`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,132 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `title` : value = Blade Runner: Time to Live
+2022-10-29 16:52:40,132 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`title`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,132 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Done materializing entity [com.project.model.Movie#136bc72d-09ef-4fd1-82c6-8512d422fc50]
+2022-10-29 16:52:40,132 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Resolving attributes for [com.project.model.Movie#edc3f435-ee90-46d6-a0ee-7d16d14137e7]
+2022-10-29 16:52:40,132 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `actors` : value = NOT NULL COLLECTION
+2022-10-29 16:52:40,132 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`actors`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,132 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `budget` : value = 100000000
+2022-10-29 16:52:40,132 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`budget`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,132 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `comments` : value = NOT NULL COLLECTION
+2022-10-29 16:52:40,132 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`comments`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,132 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `fees` : value = 425000000
+2022-10-29 16:52:40,132 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`fees`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,132 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `genre` : value = Drama
+2022-10-29 16:52:40,132 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`genre`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,132 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `name` : value = Django Unchained
+2022-10-29 16:52:40,132 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`name`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,132 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `posterUrl` : value = https://cdn.shopify.com/s/files/1/0057/3728/3618/products/ff35c38cb67f47a5f4cbec6c92a5d5a8_acb37f4c-8110-4bc9-b597-01e75e565a60_480x.progressive.jpg?v=1573587558
+2022-10-29 16:52:40,132 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`posterUrl`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,132 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `producer` : value = 81fd798f-fb5a-41f8-828e-0e54b3da6d32
+2022-10-29 16:52:40,132 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`producer`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,133 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] select producer0_.id as id1_5_0_, producer0_.achievements as achievem2_5_0_, producer0_.age as age3_5_0_, producer0_.firstname as firstnam4_5_0_, producer0_.lastname as lastname5_5_0_ from producer producer0_ where producer0_.id=?
+2022-10-29 16:52:40,332 DEBUG org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl [http-nio-8080-exec-4] On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2022-10-29 16:52:40,332 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Resolving attributes for [com.project.model.Producer#81fd798f-fb5a-41f8-828e-0e54b3da6d32]
+2022-10-29 16:52:40,332 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `achievements` : value = Academy Award, Palme,BAFTA Awards,Golden Globe Awards,Saturn Awards
+2022-10-29 16:52:40,332 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`achievements`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,332 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `age` : value = 59
+2022-10-29 16:52:40,332 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`age`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,332 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `firstname` : value = Quentin
+2022-10-29 16:52:40,332 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`firstname`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,332 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `lastname` : value = Tarantino
+2022-10-29 16:52:40,332 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`lastname`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,332 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `movies` : value = NOT NULL COLLECTION
+2022-10-29 16:52:40,332 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`movies`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,332 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Done materializing entity [com.project.model.Producer#81fd798f-fb5a-41f8-828e-0e54b3da6d32]
+2022-10-29 16:52:40,333 DEBUG org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader [http-nio-8080-exec-4] Done entity load : com.project.model.Producer#81fd798f-fb5a-41f8-828e-0e54b3da6d32
+2022-10-29 16:52:40,333 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `status` : value = true
+2022-10-29 16:52:40,333 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`status`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,333 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `title` : value = Life,liberty and the purity of happiness
+2022-10-29 16:52:40,333 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`title`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,333 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Done materializing entity [com.project.model.Movie#edc3f435-ee90-46d6-a0ee-7d16d14137e7]
+2022-10-29 16:52:40,333 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Resolving attributes for [com.project.model.Movie#74f67b13-9792-497b-be14-c16da3dbeedf]
+2022-10-29 16:52:40,333 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `actors` : value = NOT NULL COLLECTION
+2022-10-29 16:52:40,333 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`actors`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,333 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `budget` : value = 25000000
+2022-10-29 16:52:40,333 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`budget`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,333 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `comments` : value = NOT NULL COLLECTION
+2022-10-29 16:52:40,333 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`comments`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,333 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `fees` : value = 73000000
+2022-10-29 16:52:40,333 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`fees`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,333 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `genre` : value = Drama
+2022-10-29 16:52:40,333 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`genre`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,333 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `name` : value = The Shawshank Redemption
+2022-10-29 16:52:40,333 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`name`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,333 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `posterUrl` : value = https://cdn.shopify.com/s/files/1/0057/3728/3618/products/shawshank.128000_480x.progressive.jpg?v=1590097750
+2022-10-29 16:52:40,333 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`posterUrl`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,333 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `producer` : value = fdc34b54-74a0-4573-ad63-4f9de57e693d
+2022-10-29 16:52:40,333 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`producer`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,333 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] select producer0_.id as id1_5_0_, producer0_.achievements as achievem2_5_0_, producer0_.age as age3_5_0_, producer0_.firstname as firstnam4_5_0_, producer0_.lastname as lastname5_5_0_ from producer producer0_ where producer0_.id=?
+2022-10-29 16:52:40,536 DEBUG org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl [http-nio-8080-exec-4] On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2022-10-29 16:52:40,536 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Resolving attributes for [com.project.model.Producer#fdc34b54-74a0-4573-ad63-4f9de57e693d]
+2022-10-29 16:52:40,537 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `achievements` : value = Saturn Awards
+2022-10-29 16:52:40,537 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`achievements`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,537 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `age` : value = 63
+2022-10-29 16:52:40,537 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`age`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,537 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `firstname` : value = Frank
+2022-10-29 16:52:40,537 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`firstname`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,537 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `lastname` : value = Darabont
+2022-10-29 16:52:40,537 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`lastname`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,537 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `movies` : value = NOT NULL COLLECTION
+2022-10-29 16:52:40,537 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`movies`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,537 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Done materializing entity [com.project.model.Producer#fdc34b54-74a0-4573-ad63-4f9de57e693d]
+2022-10-29 16:52:40,537 DEBUG org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader [http-nio-8080-exec-4] Done entity load : com.project.model.Producer#fdc34b54-74a0-4573-ad63-4f9de57e693d
+2022-10-29 16:52:40,537 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `status` : value = true
+2022-10-29 16:52:40,537 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`status`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,537 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Processing attribute `title` : value = Fear can not hold you prisoner, hope can set you free
+2022-10-29 16:52:40,537 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Attribute (`title`)  - enhanced for lazy-loading? - false
+2022-10-29 16:52:40,537 DEBUG org.hibernate.engine.internal.TwoPhaseLoad [http-nio-8080-exec-4] Done materializing entity [com.project.model.Movie#74f67b13-9792-497b-be14-c16da3dbeedf]
+2022-10-29 16:52:40,537 DEBUG org.hibernate.query.criteria.internal.CriteriaQueryImpl [http-nio-8080-exec-4] Rendered criteria query -> select count(generatedAlias0) from Movie as generatedAlias0
+2022-10-29 16:52:40,538 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] select count(movie0_.id) as col_0_0_ from movie movie0_
+2022-10-29 16:52:40,733 DEBUG org.hibernate.loader.Loader [http-nio-8080-exec-4] Result set row: 0
+2022-10-29 16:52:40,734 DEBUG org.hibernate.loader.Loader [http-nio-8080-exec-4] Result row: 
+2022-10-29 16:52:40,735 DEBUG org.springframework.orm.jpa.JpaTransactionManager [http-nio-8080-exec-4] Initiating transaction commit
+2022-10-29 16:52:40,735 DEBUG org.springframework.orm.jpa.JpaTransactionManager [http-nio-8080-exec-4] Committing JPA transaction on EntityManager [SessionImpl(826208364<open>)]
+2022-10-29 16:52:40,735 DEBUG org.hibernate.engine.transaction.internal.TransactionImpl [http-nio-8080-exec-4] committing
+2022-10-29 16:52:40,892 DEBUG org.springframework.jdbc.datasource.DataSourceUtils [http-nio-8080-exec-4] Resetting read-only flag of JDBC Connection [HikariProxyConnection@555114661 wrapping org.postgresql.jdbc.PgConnection@6f725dff]
+2022-10-29 16:52:40,892 DEBUG org.springframework.orm.jpa.JpaTransactionManager [http-nio-8080-exec-4] Not closing pre-bound JPA EntityManager after transaction
+2022-10-29 16:52:40,894 DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver [http-nio-8080-exec-4] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-10-29 16:52:40,940 DEBUG org.springframework.security.web.context.HttpSessionSecurityContextRepository [http-nio-8080-exec-4] Did not store anonymous SecurityContext
+2022-10-29 16:52:40,956 DEBUG org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor [http-nio-8080-exec-4] Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-10-29 16:52:40,956 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-4] Completed 200 OK
+2022-10-29 16:52:40,957 DEBUG org.springframework.security.web.context.HttpSessionSecurityContextRepository [http-nio-8080-exec-4] Did not store anonymous SecurityContext
+2022-10-29 16:52:40,957 DEBUG org.springframework.security.web.context.SecurityContextPersistenceFilter [http-nio-8080-exec-4] Cleared SecurityContextHolder to complete request
+2022-10-29 16:52:41,595 DEBUG org.springframework.security.web.FilterChainProxy [http-nio-8080-exec-5] Securing GET /css/style.css
+2022-10-29 16:52:41,596 DEBUG org.springframework.security.web.context.SecurityContextPersistenceFilter [http-nio-8080-exec-5] Set SecurityContextHolder to empty SecurityContext
+2022-10-29 16:52:41,596 DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter [http-nio-8080-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2022-10-29 16:52:41,596 DEBUG org.springframework.security.web.session.SessionManagementFilter [http-nio-8080-exec-5] Request requested invalid session id 6B1A302B0447494E9099849583107F17
+2022-10-29 16:52:41,597 DEBUG org.springframework.security.web.access.intercept.FilterSecurityInterceptor [http-nio-8080-exec-5] Failed to authorize filter invocation [GET /css/style.css] with attributes [authenticated]
+2022-10-29 16:52:41,607 DEBUG org.springframework.security.web.savedrequest.HttpSessionRequestCache [http-nio-8080-exec-5] Saved request http://localhost:8080/css/style.css to session
+2022-10-29 16:52:41,607 DEBUG org.springframework.security.web.DefaultRedirectStrategy [http-nio-8080-exec-5] Redirecting to http://localhost:8080/login
+2022-10-29 16:52:41,607 DEBUG org.springframework.security.web.context.HttpSessionSecurityContextRepository [http-nio-8080-exec-5] Did not store empty SecurityContext
+2022-10-29 16:52:41,607 DEBUG org.springframework.security.web.context.HttpSessionSecurityContextRepository [http-nio-8080-exec-5] Did not store empty SecurityContext
+2022-10-29 16:52:41,607 DEBUG org.springframework.security.web.context.SecurityContextPersistenceFilter [http-nio-8080-exec-5] Cleared SecurityContextHolder to complete request
+2022-10-29 16:52:41,691 DEBUG org.springframework.security.web.FilterChainProxy [http-nio-8080-exec-6] Securing GET /login
+2022-10-29 16:52:41,692 DEBUG org.springframework.security.web.context.SecurityContextPersistenceFilter [http-nio-8080-exec-6] Set SecurityContextHolder to empty SecurityContext
+2022-10-29 16:52:41,692 DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter [http-nio-8080-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2022-10-29 16:52:41,693 DEBUG org.springframework.security.web.access.intercept.FilterSecurityInterceptor [http-nio-8080-exec-6] Authorized filter invocation [GET /login] with attributes [permitAll]
+2022-10-29 16:52:41,693 DEBUG org.springframework.security.web.FilterChainProxy [http-nio-8080-exec-6] Secured GET /login
+2022-10-29 16:52:41,693 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-6] GET "/login", parameters={}
+2022-10-29 16:52:41,693 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8080-exec-6] Mapped to com.project.controller.AuthController#getLoginPage()
+2022-10-29 16:52:41,693 DEBUG org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor [http-nio-8080-exec-6] Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-10-29 16:52:41,695 DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver [http-nio-8080-exec-6] Selected '*/*' given [text/css, */*;q=0.1]
+2022-10-29 16:52:41,713 DEBUG org.springframework.security.web.context.HttpSessionSecurityContextRepository [http-nio-8080-exec-6] Did not store anonymous SecurityContext
+2022-10-29 16:52:41,714 DEBUG org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor [http-nio-8080-exec-6] Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-10-29 16:52:41,714 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-6] Completed 200 OK
+2022-10-29 16:52:41,714 DEBUG org.springframework.security.web.context.HttpSessionSecurityContextRepository [http-nio-8080-exec-6] Did not store anonymous SecurityContext
+2022-10-29 16:52:41,714 DEBUG org.springframework.security.web.context.SecurityContextPersistenceFilter [http-nio-8080-exec-6] Cleared SecurityContextHolder to complete request
+2022-10-29 16:53:03,085 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:53:03,085 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:53:33,092 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:53:33,092 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:54:03,104 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:54:03,105 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:54:33,114 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:54:33,114 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:55:03,127 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:55:03,127 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:55:33,137 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:55:33,138 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:56:03,153 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:56:03,153 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:56:33,154 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:56:33,154 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:57:03,156 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:57:03,157 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:57:33,163 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:57:33,163 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:58:03,177 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:58:03,177 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:58:33,188 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:58:33,189 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:59:03,196 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:59:03,196 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 16:59:33,210 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 16:59:33,211 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-10-29 17:00:03,215 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-10-29 17:00:03,217 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Fill pool skipped, pool is at sufficient level.
