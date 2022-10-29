@@ -1,13 +1,17 @@
 package com.project.model;
 
+import lombok.Getter;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
 import java.util.Set;
 import java.util.stream.Collectors;
 
+@Getter
 public enum Role {
     USER(Set.of(Permission.READ)),
     ADMIN(Set.of(Permission.READ,Permission.WRITE));
+
+
 
     public Set<Permission> getPermissions() {
         return permissions;

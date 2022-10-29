@@ -1,15 +1,14 @@
 package com.project.controller;
 
-import com.project.model.Actor;
-import com.project.model.Movie;
-import com.project.model.Producer;
-import com.project.model.User;
+import com.project.dto.UserDto;
+import com.project.model.*;
 import com.project.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
+import java.util.List;
 import java.util.Optional;
 
 @RestController
@@ -109,5 +108,36 @@ public class AdminController {
          Optional<User> user = userService.findById(id);
         user.ifPresent(userService::ban);
         return new ModelAndView("redirect:/movies?page=1");
+    }
+
+
+    @GetMapping("/manager")
+    public ModelAndView adminPanel(ModelAndView model) {
+        Iterable<User> users = userService.getAll();;
+        model.addObject("users",users);
+        model.addObject("visitor", new UserDto());
+        model.setViewName("panel");
+        return model;
+    }
+
+    @GetMapping("/user/status")
+    public ModelAndView status(ModelAndView model) {
+        Iterable<User> users = userService.getAll();
+        model.addObject("users",users);
+        model.addObject("visitor", new UserDto());
+        model.setViewName("status");
+        return model;
+    }
+
+    @PostMapping("/manager/{id}")
+    public ModelAndView preveligious(@PathVariable(value = "id") String id, @ModelAttribute("visitor") UserDto user, ModelAndView model) {
+        userService.update(user,id);
+        return new ModelAndView("redirect:/admin/panel");
+    }
+
+    @PostMapping("/user/status/{id}")
+    public ModelAndView unban(@PathVariable(value = "id") String id, @ModelAttribute("visitor") UserDto user, ModelAndView model) {
+        userService.update(user,id);
+        return new ModelAndView("redirect:/admin/user/status");
     }
 }

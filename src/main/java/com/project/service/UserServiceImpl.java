@@ -34,7 +34,7 @@ public class UserServiceImpl implements UserService {
     @Transactional
     public boolean register(UserDto visitor) {
         User user = new User();
-        if(userRepository.findByEmail(visitor.getEmail()).isPresent()){
+        if (userRepository.findByEmail(visitor.getEmail()).isPresent()) {
             return false;
         }
         user.setUsername(visitor.getUsername());
@@ -89,5 +89,17 @@ public class UserServiceImpl implements UserService {
                 user.getRole().getAuthorities());
     }
 
+    public boolean update(UserDto userDto, String id) {
+       User user = userRepository.findById(id).get();
+       if(user.getRole() != null) {
+           user.setRole(userDto.getRole());
+           userRepository.save(user);
+       }
+        if(user.getStatus() != null) {
+            user.setStatus(userDto.getStatus());
+            userRepository.save(user);
+        }
+       return true;
+    }
 
 }

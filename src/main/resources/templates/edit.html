@@ -12,7 +12,7 @@
 </head>
 <body>
 <h1>Form</h1>
-<form action="#" th:action="@{/admin/edit/{id}(id=${movie.id})}" th:object="${movie}" method="post">
+<form th:action="@{/admin/edit/{id}(id=${movie.id})}" th:object="${movie}" method="post">
   <p>Movie name: <input type="text" th:field="*{name}" /></p>
   <p>Movie title: <input type="text" th:field="*{title}" /></p>
   <p>Movie budget: <input type="text" th:field="*{budget}" /></p>
