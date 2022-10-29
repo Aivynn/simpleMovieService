@@ -50,7 +50,7 @@
     </nav>
 </div>
 <form method="GET" th:action="@{admin/createmovie}">
-    <button class="btn btn-secondary btn-lg btn-block btn-outline-light" sec:authorize="hasAuthority('user:write')">
+    <button class="btn btn-primary btn-lg btn-block btn-outline-light" sec:authorize="hasAuthority('user:write')">
         <i class="fas fa-plus fa-2x">Add movie</i>
     </button>
 </form>
