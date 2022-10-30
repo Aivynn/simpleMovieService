@@ -39,13 +39,6 @@ public class MovieController {
         this.userService = userService;
     }
 
-    @GetMapping("/test")
-    public String test() {
-        String test = "test";
-        return test;
-
-    }
-
     @GetMapping("")
     public ModelAndView getOnePage(ModelAndView model, @DefaultValue("1") @RequestParam(value = "page", required = false) int currentPage) {
         Page<Movie> page = movieService.findPage(currentPage);
@@ -53,7 +46,7 @@ public class MovieController {
         long totalItems = page.getTotalElements();
         List<Movie> movies = page.getContent();
 
-        model = extracted(model, currentPage, page.getNumber(), totalPages, totalItems, movies,null);
+        model = paginationModel(model, currentPage, page.getNumber(), totalPages, totalItems, movies,null);
 
         if (totalPages > 0) {
             List<Integer> pageNumbers = IntStream.rangeClosed(1, totalPages)
@@ -66,7 +59,7 @@ public class MovieController {
         return model;
     }
 
-    private static ModelAndView extracted(ModelAndView model, int currentPage, int page, int totalPages, long totalItems, List<Movie> movies,String searchWord) {
+    private static ModelAndView paginationModel(ModelAndView model, int currentPage, int page, int totalPages, long totalItems, List<Movie> movies,String searchWord) {
         String pageWord = "/movies/search?page=";
         model.addObject("currentPage", currentPage);
         model.addObject("totalPages", totalPages);
@@ -85,7 +78,7 @@ public class MovieController {
         Movie movie = movieService.findById(id).get();
         model.addObject("movie", movie);
         model.addObject("comment", new Comments());
-        model.setViewName("movie_detail");
+        model.setViewName("moviedetail");
         return model;
     }
 
@@ -108,15 +101,13 @@ public class MovieController {
 
     @GetMapping("/search")
     public ModelAndView search(ModelAndView model,
-                               @DefaultValue("1")
-                               @RequestParam(value = "searchPage", required = false) Integer currentPage,
                                @RequestParam(value = "searchWord") String searchWord) {
 
         int totalPages = 1;
         long totalItems = 8;
         List<Movie> movies = movieService.findPage(searchWord);
 
-        model = extracted(model, 1, 1, totalPages, totalItems, movies, searchWord);
+        model = paginationModel(model, 1, 1, totalPages, totalItems, movies, searchWord);
         if (totalPages > 0) {
             List<Integer> pageNumbers = IntStream.rangeClosed(1, totalPages)
                     .boxed()
