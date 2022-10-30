@@ -5,6 +5,7 @@ import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import javax.validation.constraints.Size;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,6 +26,7 @@ public class Comments {
     private User user;
 
     @Column(columnDefinition = "TEXT")
+    @Size(min = 20, max = 50)
     private String text;
 
     @ManyToOne

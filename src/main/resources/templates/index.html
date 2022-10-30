@@ -42,7 +42,7 @@
                 </a>
             </li>
             <li th:if="${searchWord != null}" class="page-item" th:each="pageNumber : ${pageNumbers}">
-                <a class="page-link"  th:href="${pageForWhat}+${pageNumber}+'&searchWord='+${searchWord}"
+                <a class="page-link"  th:href="${pageWord}+${pageNumber}+'&searchWord='+${searchWord}"
                    th:text="${pageNumber}">
                 </a>
             </li>

@@ -53,12 +53,7 @@ public class MovieController {
         long totalItems = page.getTotalElements();
         List<Movie> movies = page.getContent();
 
-        model.addObject("currentPage", currentPage);
-        model.addObject("totalPages", totalPages);
-        model.addObject("totalItems", totalItems);
-        model.addObject("movies", movies);
-        model.addObject("number", page.getNumber());
-        model.setViewName("index");
+        model = extracted(model, currentPage, page.getNumber(), totalPages, totalItems, movies,null);
 
         if (totalPages > 0) {
             List<Integer> pageNumbers = IntStream.rangeClosed(1, totalPages)
@@ -68,6 +63,19 @@ public class MovieController {
 
         }
 
+        return model;
+    }
+
+    private static ModelAndView extracted(ModelAndView model, int currentPage, int page, int totalPages, long totalItems, List<Movie> movies,String searchWord) {
+        String pageWord = "/movies/search?page=";
+        model.addObject("currentPage", currentPage);
+        model.addObject("totalPages", totalPages);
+        model.addObject("totalItems", totalItems);
+        model.addObject("movies", movies);
+        model.addObject("number", page);
+        model.addObject("pageWord",pageWord);
+        model.addObject("searchWord", searchWord);
+        model.setViewName("index");
         return model;
     }
 
@@ -92,11 +100,10 @@ public class MovieController {
             username = principal.toString();
         }
         User user = userService.findByUserName(username);
-        ModelAndView modelAndView = new ModelAndView("redirect:/movies/{id}");
         comment.setMovie(movieService.findById(id).get());
         comment.setUser(user);
         commentaryService.create(comment);
-        return modelAndView;
+        return new ModelAndView("redirect:/movies/{id}");
     }
 
     @GetMapping("/search")
@@ -107,19 +114,9 @@ public class MovieController {
 
         int totalPages = 1;
         long totalItems = 8;
-        String pageForWhat = "/movies/search?page=";
         List<Movie> movies = movieService.findPage(searchWord);
 
-        model.addObject("currentPage", currentPage);
-        model.addObject("totalPages", totalPages);
-        model.addObject("totalItems", totalItems);
-        model.addObject("movies", movies);
-        model.addObject("pageForWhat", pageForWhat);
-        model.addObject("number", 1);
-        model.addObject("searchWord", searchWord);
-
-        model.setViewName("index");
-
+        model = extracted(model, 1, 1, totalPages, totalItems, movies, searchWord);
         if (totalPages > 0) {
             List<Integer> pageNumbers = IntStream.rangeClosed(1, totalPages)
                     .boxed()
