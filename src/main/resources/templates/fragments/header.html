@@ -31,7 +31,7 @@
             <div class="row">
                 <div class="col">
                     <ul class="navbar-nav ml-auto" style="margin-right:20px;">
-                        <li class="nav-item" sec:authorize="hasAuthority('user:write')">
+                        <li class="nav-item" sec:authorize="hasAuthority('admin:write')">
                             <a class="nav-link" th:href="@{/admin/manager}">Manager</a>
                         </li>
                             <li class="nav-item" sec:authorize="isAuthenticated()">

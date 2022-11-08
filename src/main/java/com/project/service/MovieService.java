@@ -64,6 +64,7 @@ public class MovieService {
         existingMovie.setProducer(movie.getProducer());
         existingMovie.setName(movie.getName());
         existingMovie.setPosterUrl(movie.getPosterUrl());
+        existingMovie.setGenre(movie.getGenre());
         existingMovie.setTitle(movie.getTitle());
         existingMovie.setStatus(movie.getStatus());
         LOGGER.info("Movie {} has been updated", movie.getName());
