@@ -22,37 +22,39 @@ public class MovieService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(MovieService.class);
 
-    public MovieService(MovieRepository movieRepository){
+    public MovieService(MovieRepository movieRepository) {
         this.movieRepository = movieRepository;
     }
 
-    public Page<Movie> getAll(Pageable pageable){
+    public Page<Movie> getAll(Pageable pageable) {
         return movieRepository.findAll(pageable);
     }
 
-    public Page<Movie> findPage(int pageNumber){
+    public Page<Movie> findPage(int pageNumber) {
         Pageable pageable = PageRequest.of(pageNumber - 1, 8);
         return movieRepository.findAll(pageable);
     }
 
-    public List<Movie> findPage(String name){
+    public List<Movie> findPage(String name) {
         return movieRepository.findByNameContaining(name);
     }
 
 
-
-    public boolean createMovie(Movie movie){
-       movieRepository.save(movie);
-        LOGGER.info("Movie {} , {} has been saved", movie.getName(),movie.getGenre());
+    public boolean createMovie(Movie movie) {
+        if (movie.getProducer() == null) {
+            return false;
+        }
+        movieRepository.save(movie);
+        LOGGER.info("Movie {} , {} has been saved", movie.getName(), movie.getGenre());
         return true;
     }
 
-    public Optional<Movie> findById(String id){
+    public Optional<Movie> findById(String id) {
         return movieRepository.findById(id);
     }
 
     @Transactional
-    public Movie update(String id,Movie movie){
+    public Movie update(String id, Movie movie) {
         Movie existingMovie = movieRepository.findById(id).orElseThrow(() -> {
             throw new RuntimeException("Can't find movie by id: " + id);
         });

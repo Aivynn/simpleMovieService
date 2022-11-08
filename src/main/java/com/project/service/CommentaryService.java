@@ -21,12 +21,14 @@ public class CommentaryService {
         this.commentaryRepository = commentaryRepository;
     }
 
-    public Comments create(Comments comment) {
+    public Boolean create(Comments comment) {
 
-        Comments newComment = commentaryRepository.save(comment);
-        LOGGER.info("Comment {} {} {} successfully saved", comment.getUser().getUsername(), comment.getText(),
-                comment.getMovie().getName());
-        return newComment;
+        if (comment.getText().length() < 5) {
+            return false;
+        }
+        commentaryRepository.save(comment);
+        LOGGER.info("Commentary {} {} has been saved", comment.getUser().getUsername(), comment.getText());
+        return true;
     }
 
 

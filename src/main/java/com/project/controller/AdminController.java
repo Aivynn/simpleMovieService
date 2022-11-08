@@ -48,7 +48,7 @@ public class AdminController {
 
     @RequestMapping(value = "/createactor", method = RequestMethod.POST)
     public String greetingSubmit(@ModelAttribute Actor actor) {
-        Actor movie = actorService.create(actor);
+        actorService.create(actor);
         return "redirect:/admin/";
     }
 
