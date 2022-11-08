@@ -12,10 +12,10 @@
 <div class="container">
 <div th:each="user : ${users}">
 <tr>
-  <td th:text="${user.username + ' ' + user.email}"></td>
+  <td th:text="${user.username + ' ' + user.email + ' ' + user.role }"></td>
 </tr>
   <div class="row">
-      <form class="form-group" th:action="@{|/admin/panel/${user.id}|}" th:object="${visitor}" method="post">
+      <form class="form-group" th:action="@{|/admin/manager/${user.id}|}" th:object="${visitor}" method="post">
       <select th:field="*{role}" class="form-control">
         <option  th:each="roleuser : ${T(com.project.model.Role).values()}"
                 th:value="${roleuser}" th:text="${roleuser}"></option>

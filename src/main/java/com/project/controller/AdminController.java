@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Optional;
 
@@ -122,8 +123,8 @@ public class AdminController {
     }
 
     @PostMapping("/manager/{id}")
-    public ModelAndView preveligious(@PathVariable(value = "id") String id, @ModelAttribute("visitor") UserDto user, ModelAndView model) {
+    public ModelAndView privileges(@PathVariable(value = "id") String id, @ModelAttribute("visitor") UserDto user, ModelAndView model) {
         userService.update(user, id);
-        return new ModelAndView("redirect:/admin/panel");
+        return new ModelAndView("redirect:/admin/manager");
     }
 }

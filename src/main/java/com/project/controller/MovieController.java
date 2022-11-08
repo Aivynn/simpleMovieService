@@ -115,7 +115,6 @@ public class MovieController {
             model.addObject("pageNumbers", pageNumbers);
 
         }
-
         return model;
     }
 
