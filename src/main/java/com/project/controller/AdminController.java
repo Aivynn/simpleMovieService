@@ -1,6 +1,8 @@
 package com.project.controller;
 
+import com.project.dto.MovieDto;
 import com.project.dto.UserDto;
+import com.project.mapper.movieMapper;
 import com.project.model.*;
 import com.project.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -69,7 +71,7 @@ public class AdminController {
     public ModelAndView movie(ModelAndView model) {
         Iterable<Actor> actors = actorService.findAll();
         Iterable<Producer> producers = producerService.findAll();
-        model.addObject("movie", new Movie());
+        model.addObject("movie", new MovieDto());
         model.addObject("actors", actors);
         model.addObject("producers", producers);
         model.setViewName("createmovie");
@@ -77,8 +79,8 @@ public class AdminController {
     }
 
     @RequestMapping(value = "/createmovie", method = RequestMethod.POST)
-    public String createmovie(@ModelAttribute Movie movie) {
-        movieService.createMovie(movie);
+    public String createmovie(@ModelAttribute MovieDto movie) {
+        movieService.createMovie(movieMapper.movieMap(movie));
         return "redirect:/admin/";
     }
 
