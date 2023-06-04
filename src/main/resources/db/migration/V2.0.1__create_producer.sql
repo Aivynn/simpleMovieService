@@ -1,6 +1,5 @@
 insert into producer(id, firstname, lastname, age, achievements)
-  values ('b051db34-4956-45c5-b319-224e9ee42a94','Robert','Zemeckis',70,'Chicago Film Critics Association, Academy Award for Best Director
-Golden Globe Award for Best Director');
+  values ('b051db34-4956-45c5-b319-224e9ee42a94','Robert','Zemeckis',70,'Chicago Film Critics Association, Academy Award for Best Director Golden Globe Award for Best Director');
 insert into producer(id, firstname, lastname, age, achievements)
   values ('cec0eef0-9623-4dd2-a807-6abe9f409334','Steven','Spielberg',75,'Golden Globe,BAFTA Awards');
 insert into producer(id, firstname, lastname, age, achievements)

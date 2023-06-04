@@ -1,11 +1,14 @@
 package com.project.service;
 
 import com.project.model.Actor;
+import com.project.model.Movie;
 import com.project.repository.ActorRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.Optional;
 
 @Service
 public class ActorService {
@@ -25,6 +28,10 @@ public class ActorService {
         actorRepository.save(actor);
         LOGGER.info("Actor {} {} has been saved", actor.getFirstname(), actor.getLastname());
         return true;
+    }
+
+    public Optional<Actor> findById(String id) {
+        return actorRepository.findById(id);
     }
 
     public Iterable<Actor> findAll(){

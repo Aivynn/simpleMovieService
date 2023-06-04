@@ -84,7 +84,7 @@ public class MovieController {
 
     @PreAuthorize("isAuthenticated()")
     @PostMapping("/{id}/addComment")
-    public ModelAndView createComment(@PathVariable(value = "id") String id, @ModelAttribute Comments comment, @ModelAttribute Movie movie) {
+    public ModelAndView createComment(@PathVariable(value = "id") String id, @ModelAttribute Comments comment) {
         Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         String username = "";
         if (principal instanceof UserDetails) {
